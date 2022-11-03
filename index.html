@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>HTML学习</title>
+    <style>
+        #container {
+            width: 1292px;
+            height: 700px;
+            /*margin: 20px 100px 20px 100px;*/
+            border: none;
+            background-image: url(./image/风景.jpg);
+            background-size: 1300px 700px;
+        }
+
+        #borderimg {
+            border: 80px solid green;
+            border-image: url(./image/胡桃.jpg) 100 round;
+        }
+
+        #box {
+            width: 338px;
+            margin: 20px auto;
+            font-family: 'Microsoft YaHei';
+            font-size: 14px;
+        }
+
+        input {
+            width: 260px;
+            border: 1px solid #e2e2e2;
+            height: 30px;
+            float: left;
+            /*background-image: url(images/search.jpg);*/
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: 5px center;
+            /*padding: 0 0 0 40px;*/
+
+            outline: none;
+        }
+
+        #search {
+            width: 78px;
+            height: 30px;
+            float: left;
+            background: blue;
+            color: white;
+            text-align: center;
+            line-height: 32px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        #box1 {
+            width: 1200px;
+            height: 300px;
+/*            border: solid red;*/
+            margin: 52px 0px 0px 46px;
+        }
+
+        #film {
+            width: 520px;
+            height: 300px;
+/*            border: solid red;*/
+            float: left;
+        }
+
+        #others {
+            width: 670px;
+            height: 300px;
+/*            border: solid red;*/
+            float: left;
+        }
+
+        table {
+            text-align: center;
+            border: 0px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #rooter {
+            background-color: darkorange;
+            text-align: center;
+            clear: both;
+        }
+        /*待规划区域*/
+        #box2 {
+            height: 200px;
+/*            border: solid red;*/
+        }
+        #imgmic{
+            cursor:pointer;
+/*            border:solid red;*/
+            width:100px;
+            float:right;
+        }
+    </style>
+</head>
+<body id="borderimg">
+
+    <div id="container">
+        <div align="center">
+            <a href="https://top.baidu.com/board" target="_blank">
+                <img src="D:\Visual Studio 2019\html\image\百度.png" alt="点击一下，了解更多" title="点击一下，了解更多">
+            </a>
+
+        </div>
+        <form target="_blank" method="get" action="http://www.baidu.com/s">
+            <div id="box">
+                <input type="search" name="search" value="请输入关键字">
+                <input id="search" type="submit" value="百度一下">
+
+            </div>
+        </form>
+        <div id="box1">
+            <div id="film">
+                <video width="520" height="300" controls>
+                    <source src="D:\Visual Studio 2019\html\image\纳西妲PV.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="others">
+                <table>
+                    <tr>
+                        <th><ul><li>学习类</li></ul></th>
+                        <td>
+                            <a href="https://www.lintcode.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\LintCode.png">LintCode
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://leetcode-cn.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\LeetCode.png">LeetCode
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.nowcoder.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\牛客网.png">牛客网
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://github.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\GitHub.png">GitHub
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><ul><li>影视类</li></ul></th>
+                        <td>
+                            <a href="https://v.qq.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\腾讯视频.png">腾讯视频
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.iqiyi.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\爱奇艺.png">爱奇艺
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.bilibili.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\哔哩哔哩.png">哔哩哔哩
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.huya.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\虎牙.png">虎牙
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.douyu.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\斗鱼.png">斗鱼
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><ul><li>购物类</li></ul></th>
+                        <td>
+                            <a href="https://www.jd.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\京东.png">京东
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.taobao.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\淘宝.png">淘宝
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.tmall.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\天猫.png">天猫
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://pifa.pinduoduo.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\拼多多.png">拼多多
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><ul><li>游戏类</li></ul></th>
+                        <td>
+                            <a href="http://www.7k7k.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\7k7k.png">7k7k
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.4399.com/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\4399.png">4399
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><ul><li>社交类</li></ul></th>
+                        <td>
+                            <a href="https://www.sina.com.cn/" target="_blank">
+                                <img src="D:\Visual Studio 2019\html\image\新浪.png">新浪
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="box2">
+            <div id="imgmic">
+                <script src="D:\Visual Studio 2019\html\music.js"></script>
+                <audio id="music" src="D:\Visual Studio 2019\html\image\丘丘谣.mp3">
+                    <!--<source src="D:\Visual Studio 2019\html\image\丘丘谣.mp3" type="audio/mpeg">-->
+                </audio>
+                <img src="D:\Visual Studio 2019\html\image\1.gif" onclick="bgaudio()">
+            </div>
+
+            
+        </div>
+        
+        <div id="rooter" colspan="3">
+            版权 © haha-yihong.github.io
+        </div>
+    </div>
+</body>
+
+</html>
